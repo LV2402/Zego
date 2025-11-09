@@ -8,7 +8,7 @@ function App() {
   const userID = "vamshi";
   const userName = "Vamshi";
   const roomID = "1234";
-  const token = "04AAAAAGkMm8kADLU1FvGHWDndWkshvQCwFs4OwNUHtWPQIZKzF4ZP4qCNkCXOiNbPjs5X1+zTmqTmUpFHbT6TQBmqqztuJtkOfHhMsUXCgf4EyxYnh4b3s1If/8mLm4KxV1Je+hWitEfEIPjprxSQk8QzrUjCC8LXJ5aZoiTDacBJ6p1O7b9KNW+iE/Iz7FGSV9fc7OuFwduWVjULdxtEh8wievvnPLfW3D+Ba3258YgEAhA8h1hmUOkelc+0r6JPznwRYM5C/dMB";
+  const token = "04AAAAAGkSDSsADFF6WqaSj0qfUq9qbgCwTYj6yf16GiJ4DLXfGaAooMY6dMZz6zmOtuzY50VMw43+JSmbzzpICE+NTpESavot+5nOuZGBfl0TB+T7roZDqKrDur3Gk6u8NlpvXuRfL5UgXGSsG2q1Gn68gv8oP0pVcYXjB+ooz3WLmoR7wrk32ieaHdxm5bf2UjvmdW59I0mRkGEpf25mAu3USW5ylNcd4nWBhc9uLgR/q36/pcRck4OnpRNkrFTax1KtbR/qcr8B";
 
   const server = "wss://webliveroom1339810981-api.coolzcloud.com/ws";
 
@@ -27,6 +27,7 @@ function App() {
     });
 
     await zg.loginRoom(roomID, token, { userID, userName });
+
 
     setCurrentTool(zegoSuperBoard.getToolType());
 
